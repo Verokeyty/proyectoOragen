@@ -11,8 +11,8 @@ if(!$cnxn){
 		echo "-1";
 }else{
 	//CONEXION VERIFICADA: código CRUD BD
-	error_reporting(E_ERROR | E_PARSE);
-	mysqli_set_charset($cnxn, "utf8");
+	error_reporting(E_ERROR | E_PARSE);//no muestra el warning
+	mysqli_set_charset($cnxn, "utf8");//no contempla el espa;ol
 	//Cortesía Monge Solís
 	$sql = "SELECT * FROM tbusuarios WHERE nombUsuario = '$username' AND contrasena = '$clave'"; 
 

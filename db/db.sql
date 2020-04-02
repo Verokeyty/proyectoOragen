@@ -39,3 +39,7 @@ create table tbCompra(
     primary key(idProducto,idUsuario),
     foreign key (idUsuario) references tbUsuarios(idUsuario),
     foreign key (idProducto) references tbProductos(idProducto));
+
+
+--PRODUCTOS--
+INSERT INTO `tbproductos` (`idProducto`, `nombProducto`, `cantidad`, `precio`, `img`) VALUES ('1', 'Fresa', '200', '2000', 'imagen');
