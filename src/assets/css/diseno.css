@@ -2,25 +2,29 @@ html, body{
     width: 100%;
     height: 100%;
     margin: 0px;
-     background-color: #e5ffcc;
+     background-color: #d3e3d3;
 }
 
 #encabezado{
-     padding: 0px;
-     padding-left: 200px; 
-    background-color: #f5f5f0;
 
-   
+padding-left: 50px; 
+background-color: #14a8e3;
+animation-duration: 4s;
+
+
 }
 
+
+
 #ingresar{
+   font: oblique bold 120% cursive;
   text-shadow: 4px 4px 10px orange; 
   bottom: 8px;
   right: 16px;
-  font-size: 15px;
+  font-size: 13px;
   float: right;
-  width: 300px;
-  border: 5px solid #ffffff;
+  width: 252px;
+  border: 5px solid #ff7708;
   padding: 10px;
   margin: 20px; 
   margin-right: 200px; 
@@ -29,161 +33,43 @@ html, body{
 
 }
 #registro{
-  text-shadow: 4px 4px 10px orange; 
+  
+   font: oblique bold 120% cursive;
   bottom: 30px;
   right: 16px;
   font-size: 15px;
   float: right;
-  width: 300px;
-  border: 5px solid #ffffff; 
+  width: 252px;
+  border: 5px solid #ff7708; 
   padding: 10px;
   margin: 10px; 
   margin-right: 50px; 
 }
-#img{
+#registroIMG{
      width: 300px;
-  margin-top: 30px; 
-  margin-left: 50px; 
-}
-
-.btnregistro{
-    -webkit-appearance: button;
-    -moz-appearance: button;
-    appearance: button;
-    text-decoration: none;
-    color: initial;
-    border: 2px solid gray;
-    background-color: #d6d5d2;
-    padding: 5px 10px;
-    display: inline-block;
-    text-align: center;
-    font-size: 14px;
-    border-radius: 3px;
-}
-
-
-.dropdownmenu{
-    position: relative;
-    display: inline-block;
-}
-.contenidodropdown{
-    display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-#barraarriba{
-    background-color: black;
-    height: 20%;
-    color: white;
-    font-family: Georgia,serif;
-    text-align: center;
-    width: 100%;
-
-}
-ul{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-background-color: #333;
+  margin-top: 5px; 
+  margin-left: 25px; 
+   position: relative;
+  animation-name: imgFrutas;
+  animation-duration: 4s;
   
-
-}
-li{
-    float: left;
-    border-right: 1px solid #bbb;
-}
-li a{
-    display: block;
-    color:white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    
-}
-li a:hover{
-    background-color: #ff8000;
-    color: black;
 }
 
-.btnajustes{
-    border-left: 1px solid #bbb;
+@keyframes imgFrutas{
+  0%   { left:0px; top:0px;}
+  25%  { left:200px; top:0px;}
+  50%  { left:200px; top:100px;}
+  75%  {left:0px; top:100px;}
+  100% { left:0px; top:0px;}
 }
 
-#PrincIzq{
-    float:left;
-    background-image: url('verticalIzquierda.jpg');
-    width:24.85%;
-    height: 80%;
-    position: absolute;
-    margin-top: 33px;
-    opacity: 0.5;
+#registroText{
 
-}
-.btnmatch{
-    color: black;
-    border: 4px solid hotpink;
-    background-color: #fad4f6;
-    padding: 5px 10px;
-    display: inline-block;
-    text-align: center;
-    font-size: 14px;
-    border-radius: 3px;
-}
-
-#PrincDerecha{
-    background-color: #b778fa;
-    float:right;
-    width:7%;
-    height:80%;
-    position: absolute;
-    margin-top: 33px;
-    margin-left: 93%;
-
-}
-
-#PrincCentro{
-    background-color: #b0dbe8;
-    float:left;
-    width:70%;
-    height: 80%;
-    position: absolute;
-    margin-top: 33px;
-    margin-left: 24.85%;
-}
-
-#TextoEspacio{
-    width: 270px;
-    height: 70px;
-    margin-left: 20px;
-}
-
-#btnpublicar{
-    margin-left: 20px;
-}
-
-#divPosts{
-    background-color: #fad193;
-    color: black;
-    border: 2px solid black;
-    
-
-}
-
-#datosPerfil{
-    position: relative;
-    display: inline-block;
-}
-
-#Estados{
-      
-       width: 300px;
-  margin-top: 0px; 
-  margin-left: 300px;;
-
+     text-align: center;
+     font-size: 20px;
+     margin-top: 150px; 
+     background-color: #ff7708;
+     color: white
 }
 
 
@@ -197,15 +83,22 @@ li a:hover{
         float:none;
         width: 75%;
         position: relative;
+        margin-right: 100px; 
     }
     #registrasNuevo{
         float:right;
         width: 70%;
     }
-
-    #img{
+#registroIMG{
         visibility: hidden;
     }
+
+    #registroText{
+
+     margin-top:0px; 
+    
+}
+
 }
 @media screen and (max-width:770px){
     #encabezado{
@@ -216,6 +109,7 @@ li a:hover{
         float:none;
         width: 75%;
         position: relative;
+        margin-right: 50px; 
     }
     #registrasNuevo{
         float:left;
@@ -224,7 +118,41 @@ li a:hover{
         padding: 10px;
         
     }
+#registroIMG{
+        visibility: hidden;
+    }
+     #registroText{
 
+     margin-top:0px; 
+    
+    
+}
+
+@media screen and (min-width:300px){
+    #encabezado{
+        height:100%
+        padding-left: 40px;
+    }
+#ingresar{
+        float:none;
+        width: 75%;
+        position: relative;
+        margin-right: 50px; 
+    }
+    #registrasNuevo{
+        float:left;
+        margin-right: none;
+        margin: none;
+        padding: 10px;
+        
+    }
+#registroIMG{
+        visibility: hidden;
+    }
+     #registroText{
+
+     margin-top:0px; 
+    
     
 }
 
