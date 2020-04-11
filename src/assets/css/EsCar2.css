@@ -1,0 +1,27 @@
+#Contenido{
+	width: 100%;
+	height: 40%;
+}
+
+.item{
+width: 100%;
+height: auto;
+display: block;
+padding: 10px;
+border: 1px solid black;
+background-color: ivory;
+}
+
+.imgCarrito{
+	border-radius: 10%;
+}
+
+.otroDiv{
+	width: 100%;
+	height: 30%;
+display: initial;
+}
+
+#parrafo1{
+	display: list-item;
+}

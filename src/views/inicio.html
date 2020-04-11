@@ -4,14 +4,15 @@
 	<title>Orange</title>
 	<link rel="stylesheet" type="text/css" href="../assets/css/estilos.css">
 	<link rel="stylesheet" type="text/css" href="../assets/css/diseno.css">
+	<script type="text/javascript" src="../assets/js/inicio2.js"></script>
 	 <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
    
-    <meta name="description" content="Citas en linea. ">
+    <meta name="description" content="Compra frutas y verduras. ">
     <meta name="mobile-web-app-capable" content="yes">
     <link rel="shortcut icon" href="https://1.bp.blogspot.com/-V7R9_de9UuQ/Xl27Yi0mGTI/AAAAAAAALoc/6wRB8obHuQQSzx0i6V5aVa59wQlOggglACEwYBhgL/s640/icono.png" type="image/x-icon">
 </head>
-<body>
+<body onload="buscar()">
 
 
 <div id="encabezado" >
@@ -19,7 +20,8 @@
      
     <img src="https://1.bp.blogspot.com/-j1qaqvm7Je8/XoKspSLeqtI/AAAAAAAAL0g/aUaEFjuPM2kab2LXZsNGUsAFqTDwnuaiQCLcBGAsYHQ/s1600/Sin%2Bt%25C2%25B0tulo.png" width="300" height="200" id="logotipo">
 
-     <a href="./login.html" > Iniciar Sesion </a>
+     <a href="./login.html" > Cerrar Sesion </a><br>
+     <a style="float: right;" href="./Carrito.html">Carrito</a>
 
 </div>
 <div class="c-productos">
@@ -40,7 +42,7 @@
 			    </div>
 			</div>
 			<div class="productos-card-buttom">
-				<button class="productos-card-btn">Agregar al carrito</button>
+				<button class="productos-card-btn" onclick="insertarCarrito()">Agregar al carrito</button>
 			</div>
 			
 		</div>
@@ -114,11 +116,17 @@
 			<div class="productos-card-buttom">
 				<button class="productos-card-btn">Agregar al carrito</button>
 			</div>
+			
 		</div>
+		
 	</div>
+	<div id="respuesta">
+				
+			</div>
 </div>
 
 
-
+<script type="text/javascript" src="../assets/js/inicio.js">
+</script>
 </body>
 </html>

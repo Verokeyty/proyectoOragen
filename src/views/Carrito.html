@@ -2,24 +2,26 @@
 <html>
 <head>
 	<title>Carrito</title>
-	 <link rel="stylesheet" type="text/css" href="EstilosCarrito.css">
+	 <link rel="stylesheet" type="text/css" href="../assets/css/EstilosCarrito.css">
+	  <link rel="stylesheet" type="text/css" href="../assets/css/EsCar2.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
-    <script type="text/javascript" src="funcionComprar.js"></script>
+    <script type="text/javascript" src="../assets/js/funcionComprar.js"></script>
 </head>
 <body onload="desplegar()">
 	<div id="barraArribaCarrito">
 		<ul>
-		<li><a href="principal.html"><img src="flecha.jpg" width="20" height="15"> Principal</a></li>
-		<li style="float:right" class="btnSalir"><a href="index.html">Salir</a></li>
+		<li><a href="../views/inicio.html"> Principal</a></li>
+		<li style="float:right" class="btnSalir"><a href="login.html">Salir</a></li>
 	</ul>
 	<div id="TituloCarrito">
 		<h2>Carrito</h2>
 	</div>
 	</div>
-	<div id="Contenido">
-		<input type="text" id="TextField">
-		
+	<div id="Contenido">	
+	</div><br>
+	<div>
+		<input type="button" value="Comprar" onclick="comprar()">
 	</div>
 </body>
 </html>

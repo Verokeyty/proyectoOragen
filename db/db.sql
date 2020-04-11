@@ -1,5 +1,6 @@
-create database Proyecto;
-use Proyecto;
+DROP DATABASE IF EXISTS  `Proyecto`;
+create database `Proyecto`;
+use `Proyecto`;
 
 
 create table tbUsuarios (
@@ -39,3 +40,10 @@ create table tbCompra(
     primary key(idProducto,idUsuario),
     foreign key (idUsuario) references tbUsuarios(idUsuario),
     foreign key (idProducto) references tbProductos(idProducto));
+------------------------------------------------------------
+ create table Carrito(
+  idProducto int primary key not null auto_increment,
+nombProducto varchar(40),
+cantidad int (220),
+precio decimal(10,2), 
+img varchar (300));

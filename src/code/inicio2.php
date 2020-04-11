@@ -6,8 +6,8 @@
 		echo "-1";
 	}else{
 		//CONEXION VERIFICADA: código CRUD BD
-		mysqli_set_charset($cnxn, "utf8");
-		$consulta ="SELECT * FROM `Carrito`";
+		mysqli_set_charset($cnxn, "utf8"); 
+		$consulta ="SELECT * FROM `tbProductos`";
 		$respuesta = mysqli_query($cnxn, $consulta);
 		if(mysqli_num_rows($respuesta) > 0){
 			$nuevoArreglo = array();
@@ -23,4 +23,5 @@
 		}
 
 	}
+
 ?>
